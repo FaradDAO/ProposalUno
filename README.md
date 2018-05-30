@@ -1,2 +1,4 @@
 # ProposalUno
-The first proposal of the Farad DAO
+
+## Farad DAO Technical Proposal White Paper
+- [English](Proposal.md)
