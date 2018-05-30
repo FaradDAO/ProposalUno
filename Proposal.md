@@ -1,9 +1,9 @@
 
 # FRD DAO Proposal Technical White Paper V0.1
 
-** May 31st, 2018
+**May 31st, 2018**
 
-** Abstract:** The FRD DAO proposal is *the* complete Whitepaper for the future direction of FRD cryptoken. This document is a work in progress. Please check back often.
+**Abstract:** The FRD DAO proposal is *the* complete Whitepaper for the future direction of FRD cryptoken. This document is a work in progress. Please check back often.
 
 Copyright © 2018 Farad Cryptoken
 
