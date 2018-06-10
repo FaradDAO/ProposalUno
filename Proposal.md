@@ -1,5 +1,5 @@
 
-# FRD DAO Proposal Technical White Paper V0.1.1
+# FRD DAO Proposal Technical White Paper V0.1.2
 
 **May 31st, 2018**
 
@@ -22,6 +22,7 @@ Without permission, anyone may use, reproduce or distribute any material in this
 - [The Stable Coin](the-stable-coin)
 - [The FDAO Store](the-fdao-store)
 - [Technical Realizations](technical-realizations)
+- [References](references)
 
 <!-- /MarkdownTOC -->
 
@@ -112,7 +113,7 @@ The product listing module is govern by `reward and punishment` where each posti
 
 ## Authenticator
 
-At the moment, we are basing the technical realizations on the `Ethereum Platform` for its Smart Contract offerings. The FDAo token shall be implemented as ERC223 standard, and the same for the F Token as the new standard simplifies the token transfer easily as compared to the ERC20 specifications.
+At the moment, we are basing the technical realizations on the `Ethereum Platform` for its Smart Contract offerings. The FDAo token shall be implemented as [ERC223](https://github.com/ethereum/EIPs/issues/223) standard, and the same for the F Token as the new standard simplifies the token transfer easily as compared to the ERC20 specifications.
 
 The Authenticator basically listens to all FDAO transactions on the contract, and then based on the logics, would verify whether the transaction is valid, or invalid. The number validators are to be determined based on the current participants and the lefover are then put into the pool for future authentications.
 
@@ -125,6 +126,10 @@ All these are govern by the stakes the user has, as well as the all participatin
 ## DApp
 
 The FDAO Store DApp is to be implemented using `VueJS` framework for the interactovoty, with the RESTful backend functions to store the data in the database. This is the first version of the implementation for fast `go to market` solution. Further improvement shall be done using `swarm` as the backend storage functions.
+
+# References
+
+ERC223 Specifications, [https://github.com/ethereum/EIPs/issues/223](https://github.com/ethereum/EIPs/issues/223), Ethereum Foundations.
 
 
 
