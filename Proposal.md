@@ -1,7 +1,7 @@
 
-# FRD DAO Proposal Technical White Paper V0.1.2
+# FRD DAO Proposal Technical White Paper V0.1.3
 
-**May 31st, 2018**
+**June 12th, 2018**
 
 **Abstract:** The FRD DAO proposal is *the* complete Whitepaper for the future direction of FRD cryptoken. This document is a work in progress. Please check back often.
 
@@ -19,38 +19,55 @@ Without permission, anyone may use, reproduce or distribute any material in this
 - [Requirements for DAO Applications](#requirements-for-dao-applications)
 - [The Proposed Idea](#the-proposed-idea)
 - [Delegated Proof of Stakes] (delegated-proof-of-stakes)
+	- [Authenticator Functions](authenticator-functions)
+	- [Stakes and Rewards](stakes-and-rewards)
 - [The Stable Coin](the-stable-coin)
 - [The FDAO Store](the-fdao-store)
 - [Technical Realizations](technical-realizations)
+	- [Authenticator](authentictor)
+	- [User Validations](user-validations)
 - [References](references)
 
 <!-- /MarkdownTOC -->
 
+# Document History
+
+| Date            | Version | Author        | Remarks                               |
+|:----------------|:--------|:--------------|:----------------------|
+| May 31st, 2018  | 0.1.0   | Hisham Ismail |Document initialization               |
+| June 11th, 2018 | 0.1.1   | Hisham Ismail | Added preliminary description of FDAO |
+| June 11th, 2018 | 0.1.2   | Hisham Ismail | Added the technical realizations      |
+| June 12th, 2018 | 0.1.3   | Hisham Ismail | Added detailed explanations and document history  |
+
+
 # Background
 
-The idea of doing Farad DAO is to revive the current Farad cryptoken into a new fully functional Decentralized Autonomous Organization, while at the same time, proposing a compleling use case for the future use of Farad DAO (FDAO).
+The idea of doing Farad DAO is to revive the current Farad cryptoken into a new fully functional Decentralized Autonomous Organization (DAO), while at the same time, proposing a compleling use case for the future use of Farad DAO (FDAO).
 
 # Requirements for FDAO Applications
 
+A lot has been said about DAO and yet there are many ways to implement them to make the oraganization as autonomous as possible. The requirements for this FDAO Applications are:
+
 1. The FDAO has to be truly autonomous, in such that the users are truly in control of the whole FDAO ecosystem
-2. Voting is the primary function to be used to achieve concensus decision moving forward
+2. Voting is the primary function to be used to achieve concensus decision in moving forward
 3. It needs a compelling use case in terms of uses, and solve the current integration of the Web and Crypto currency in general
 4. It needs to have intrinsic demands and supply to retain its value.
 
 # The Proposed Idea
 
-FDAO will be an ICO by itself to garner new users to this new eco-system. The idea is to have a truly autonomous offerings whereby all the Farad holders shall be moved to the new Farad DAO once the ICO is completed.
+Since FDAO is an eco-system by itself, and not just a migration from FRD eco-system, there is a need to open up the participation to new users in the blockchain space to include them as part of the FDAO community. As such, FDAO will be an ICO by itself to garner new users to this new eco-system. The idea is to have a truly autonomous offerings whereby all the Farad holders shall be moved to the new Farad DAO once the ICO is completed.
 
-The MVP will be the FDAO web store where users of FDAO tokens can buy nd sell the items online, fully governed by the FDAO users themselves through voting, from item listing, item buy and sell, as well as item fulfillment.
+The MVP will be the FDAO web store where users of FDAO tokens can buy nd sell the items online, fully governed by the FDAO users themselves through voting, from item listing, item buy and sell, as well as item fulfillment. The main product offering would be the `Authenticator Machine` where all the varifications and validations of activities in the FDAO community are to be done by this device.
 
-All the activities in the buy and sell shall be verified by FDAO users through our custom "Authenticator" machine whereby all actions are rewarded by the confirming the transaction is legit, valid, appropriate and sound to be added to begin with.
+All the activities in the buy and sell shall also be verified by FDAO users through this custom `Authenticator Machine` whereby all actions are rewarded by the confirming the transaction is legit, valid, appropriate and sound to be added and presented to the community to begin with.
 
 # Delegated Proof of Stakes
 
-The core offering of FDAO is hinged around Delegted Proof of Stakes (DPOS) where FDAO users can purchase the authenticator machine using FDAO tokens directly, and put some FDAO tokens as stakes on the authenticator machine for further use.
+The core offering of FDAO is hinged around Delegted Proof of Stakes (DPOS) where FDAO users can purchase the `Authenticator Machine` using FDAO tokens directly, and put some FDAO tokens as stakes on the authenticator machine for further use as described below.
 
 ## Authenticator Functions
-The Authenticator machine by itself is just a DApp that runs on a Raspberry-Pi that ships with FDAO application logics and core web store application, including other functionalities that shall be added in the future, including:
+
+The Authenticator machine by itself is just a DApp that runs on a Raspberry-Pi with our proprietary software and systems that baked into the machine - the FDAO application logics and core web store application, including other functionalities that shall be added in the future, including:
 
 1. The news application
 2. The Blog application
@@ -63,6 +80,8 @@ Authenticator machine can be seen as the "vault" where FDAO users can store thei
 2. Validating the action of users
 3. As a mean of reward and also penalty, based on the action of the users
 4. Growing the FDAO tokens based on the activity happens
+
+All future applications and modules are to be added on the `Authenticator Machine` via a system update where all machines shall be notified upon new modules and applications are ready to be installed, or upgraded.
 
 ## Stakes and Rewards
 
@@ -89,24 +108,31 @@ Since FDAO store is all about selling real world items, and participating in the
 
 For this purpose, a stable coin `F` (for the lack of better name) shall be created where all items are priced in `F`. The value of `F` is fixed to 1 US Dollar per F token
 
-`F == 1 US Dollar`
+```
+F Token Value == 1 US Dollar
+```
 
-As such, the final payment in FDAO for the purchased item is then calculted based on the current value of FDAO token in the market, and then converted to F token to be sent to the seller of the item. As the value of FDAO increase, less FDAO is required to purchse the item, and vice versa.
+As such, the final payment in FDAO for the purchased item is then calculated based on the current value of FDAO token in the market, and then converted to F token, and to be sent to the seller of the item. As the value of FDAO increase, less FDAO is required to purchase the item, and vice versa.
 
 The F Token can then be converted to `fiat` currency through the internal FDAO exchanger via bank transfer, or any other cash remittance facility that is available for that country, for example PayPal, AliPay and so on.
+
 
 # The FDAO Store
 
 The FDAO store is pretty much what `craigslist` is where it is truly autonomous and governed by the FAO users. It is a `DApp` in its own rights, and contains a few modules:
 
-1. **Wallet module:** the private/public key that is maintained by the user, meaning user can import their private key to the internal wallet, and control it from any other supported wallet app
-2. **Chat and messaging module:** users can interact with each posting, or even chat among themselves
-3. **Exchanger module:** where users can exchange the F Token to `fiat`
+1. **Wallet Module:** the private/public key that is maintained by the user, meaning user can import their private key to the internal wallet, and control it from any other supported wallet app
+2. **Chat and Messaging Module:** users can interact with each posting, or even chat among themselves
+3. **Exchanger Module:** where users can exchange the F Token to `fiat`
 4. **Checkout Module:** where users can checkout the products bought
+5. **Product Module:** where users can post new products to sell
+6. **Inventory Module:** where products inventory can be tracked
+7. **Shipment and Delivery Module:** where shipments can be tracked and monitored after purchase
+8. **Invoice Module:** where proper invoicing can be produced for item bought
+9. **Arbitration Module:** where shipped items can be returned back if it is not as per advertised.
 
-The prominent product on sale is of course the **Authenticator** machine where users can buy the item using F Token as well.
+The prominent product on sale is of course the **Authenticator Machine** where users can buy the item using F Token as well.
 
-The product listing module is govern by `reward and punishment` where each posting, especially new product listing, shall be accompanied with some FDAO stakes. Should the listing is deemed as offensive, or inappropriate, the stakes put by the seller are then confiscated, and be rewarded to those who participated in validating the product listing
 
 # Technical Realizations
 
@@ -121,15 +147,27 @@ The Authenticator basically listens to all FDAO transactions on the contract, an
 
 User validations are done based on the real user activities on the FDAO Web Store. All the interactions, including product listings, comments and interactions on the store are able to be rewarded by the participants of the store itself.
 
+The product listing module in the Web Store is governed by `reward and punishment` model where each posting, especially new product listing, shall be accompanied with some FDAO stakes. Should the listing is deemed as offensive, or inappropriate, the stakes put by the seller are then be revoked, and rewarded to those who participated in validating the product listing.
+
 All these are govern by the stakes the user has, as well as the all participating user actions combined. It can either be positive, or even negative rewards based on the post being scrutinized.
 
 ## DApp
+
+The FDAO Web Store is a DApp where the store shall be in communication with the Smart Contract address on Ethereum Blockchain. As it is based on a Smart Contract, the web store shall be just the client to the Smart Contract using the `web3.js` technology for Smart Contract interactions.
+
+The Smart Contract shall be developed using `OpenZeppelin` framework, and utilizing `ZeppelinOS` solution for upgradable Smart Contract. This is particularly useful as we see the FDAO will continue to evolve in the future based on the needs of the FDAO community.
 
 The FDAO Store DApp is to be implemented using `VueJS` framework for the interactovoty, with the RESTful backend functions to store the data in the database. This is the first version of the implementation for fast `go to market` solution. Further improvement shall be done using `swarm` as the backend storage functions.
 
 # References
 
-ERC223 Specifications, [https://github.com/ethereum/EIPs/issues/223](https://github.com/ethereum/EIPs/issues/223), Ethereum Foundations.
+ERC223 Specifications, [https://github.com/ethereum/EIPs/issues/223](https://github.com/ethereum/EIPs/issues/223), Ethereum Foundation
+
+web3.js, [https://github.com/ethereum/web3.js/](https://github.com/ethereum/web3.js/), Ethereum Foundation
+
+OpenZeppelin, [https://zeppelin.solutions](https://zeppelin.solutions), Zeppelin Solutions
+
+ZeppelinOS, [https://zeppelinos.org](https://zeppelinos.org), Zeppelin Solutions
 
 
 
