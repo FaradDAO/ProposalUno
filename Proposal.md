@@ -1,7 +1,7 @@
 
-# FRD DAO Proposal White Paper V0.1.4
+# FRD DAO Proposal White Paper V0.1.5
 
-**June 13th, 2018**
+**June 26th, 2018**
 
 **Abstract:** The FRD DAO proposal is *the* general Whitepaper for the future direction of FRD cryptoken. This document is a work in progress. Please check back often.
 
@@ -40,7 +40,7 @@ Without permission, anyone may use, reproduce or distribute any material in this
 | June 11th, 2018 | 0.1.2   | Hisham Ismail | Added the technical realizations      |
 | June 12th, 2018 | 0.1.3   | Hisham Ismail | Added detailed explanations and document history  |
 | June 13th, 2018 | 0.1.4   | Hisham Ismail | Added DAO introductions and proof reading  |
-
+| June 26th, 2018 | 0.1.5   | Hisham Ismail | Added Arbitration  |
 
 # Background
 
@@ -179,6 +179,11 @@ The FDAO Web Store is a DApp where the store shall be in communication with the 
 The Smart Contract shall be developed using `OpenZeppelin` framework, and utilizing `ZeppelinOS` solution for upgradable Smart Contract. This is particularly useful as we see the FDAO will continue to evolve in the future based on the needs of the FDAO community.
 
 The FDAO Store DApp is to be implemented using `VueJS` framework for the interactovoty, with the RESTful backend functions to store the data in the database. This is the first version of the implementation for fast `go to market` solution. Further improvement shall be done using `swarm` as the backend storage functions.
+
+# Arbitration
+
+Since the running of the FDAO is truly on a decentralized mode, to protect the organization from any hijack by the potential nemesis is vital to the organization structure itself. As such, there should be an Arbitration Forum for all the members to voice their opinions and state their case for further considerations by the community. If the cse is warranted with relevant proofs, the case whould be up for votes by all the community members, and further actions should be dervied from thereon. Should there is any impasse on the decisions, the FDAO Committee Members shall step in and the decide the next logical course of actions.
+
 
 # References
 
