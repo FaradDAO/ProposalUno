@@ -27,6 +27,7 @@ Without permission, anyone may use, reproduce or distribute any material in this
 - [Technical Realizations](#technical-realizations)
 	- [Authenticator](#authentictor)
 	- [User Validations](#user-validations)
+- [Arbitration](#arbitration)
 - [References](#references)
 
 <!-- /MarkdownTOC -->
