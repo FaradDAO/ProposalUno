@@ -19,7 +19,7 @@ Without permission, anyone may use, reproduce or distribute any material in this
 - [What is DAO](#what-is-dao)
 - [Requirements for DAO Applications](#requirements-for-dao-applications)
 - [The Proposed Idea](#the-proposed-idea)
-- [Delegated Proof of Stakes] (#delegated-proof-of-stakes)
+- [Delegated Proof of Stakes](#delegated-proof-of-stakes)
 	- [Authenticator Functions](#authenticator-functions)
 	- [Stakes and Rewards](#stakes-and-rewards)
 - [The Stable Coin](#the-stable-coin)
